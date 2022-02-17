@@ -13,3 +13,30 @@
     text-align: center;
     font-family: 'Lobster', cursive;
 }
+
+.right-section {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-header {
+    color: midnightblue;
+    text-align: center;
+}
+
+.calcu {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: deeppink;
+    padding: 5px 35px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    width: 90%;
+}

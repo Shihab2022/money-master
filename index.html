@@ -24,13 +24,99 @@
     <!-- main section -->
 
     <main>
+
         <div class="container my-5">
             <div class="row">
+                <!-- left section -->
                 <div class="col-lg-7 ">
                     <img class="h-100 w-100 rounded" src="images/money-bank.jpg" alt="">
                 </div>
-                <div class="col-lg-5 bg-danger ps-5 ">
-                    hknv
+
+                <!-- right section -->
+
+                <div style="background-color: oldlace;" class="col-lg-5 rounded  ">
+
+                    <div class="right-section">
+                        <!-- income -->
+                        <div class="income">
+                            <h3 class="mb-4 mt-5 right-header  fs-1">Income</h3>
+                            <div class="mb-3 row gx-5">
+                                <label class="col-lg-3 col-form-label fs-4">Income:</label>
+                                <div class="col-lg-9 ">
+                                    <input type="text" class="form-control w-75  m-2" id="income-input">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Expenses -->
+
+                        <div class="expenses">
+                            <h3 class="mb-4 mt-3 right-header  fs-1">Expenses </h3>
+
+                            <div class="mb-3 row gx-5">
+                                <label class="col-lg-3 col-form-label fs-4">Food:</label>
+                                <div class="col-lg-9 ">
+                                    <input type="text" class="form-control w-75  m-2" id="food-input">
+                                </div>
+                            </div>
+                            <div class="mb-3 row gx-5">
+                                <label class="col-lg-3 col-form-label fs-4">Rent:</label>
+                                <div class="col-lg-9 ">
+                                    <input type="text" class="form-control w-75  m-2" id="rent-input">
+                                </div>
+                            </div>
+                            <div class="mb-3 row gx-5">
+                                <label class="col-lg-3 col-form-label fs-4">Clothes:</label>
+                                <div class="col-lg-9 ">
+                                    <input type="text" class="form-control w-75  m-2" id="clothes-input">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- calculate -->
+
+                        <div class="calcu">
+                            <button id="calculate-btn" class="button rounded-pill my-3">Calculate</button>
+                            <h3 id="total-expenses" class="mb-4 mt-4 right-header  fs-2">Total Expenses: 5500</h3>
+                            <h3 id="balance" class="mb-4 mt-1 right-header  fs-2">Balance: 4500</h3>
+                        </div>
+
+
+
+
+
+
+
+                        <!-- end -->
+                    </div>
+                    <!-- saving section -->
+                    <div class="saving my-5 mx-2">
+
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="mb-3 row gx-5">
+                                    <label class="col-lg-3 col-form-label fs-4">Save:</label>
+                                    <div class="col-lg-9 ">
+                                        <input type="text" class="form-control w-100  m-2" id="food-input">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 fs-2"> % </div>
+                            <div class="col-lg-4">
+                                <button id="calculate-btn" class="button rounded-pill w-100 ps-4 my-1">Save</button>
+                            </div>
+
+                        </div>
+
+
+                        <div class="calcu">
+
+                            <h3 id="saving-amount" class="mb-4 mt-4 right-header  fs-2">Saving Amount: 2000 </h3>
+                            <h3 id="remaining-balance" class="mb-4 mt-1 right-header  fs-2">Remaining Balance: 2500</h3>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </div>
