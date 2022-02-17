@@ -59,34 +59,19 @@ function displayOutput(outputId) {
 
 function getInput(inputId) {
     const inputs = document.getElementById(inputId).value;
-
     const parseFlotValue = parseFloat(inputs);
 
-    return parseFlotValue;
+    if (isNaN(parseFlotValue)) {
+        alert(inputs + ' is a string value. Please inter a number.')
+    } else if (parseFlotValue < 0) {
+
+        alert(parseFlotValue + ' is a negative number . Please put a positive number.');
+        const newNumber = Math.abs(parseFlotValue);
+        return newNumber;
+
+    } else {
+        return parseFlotValue;
+
+    }
+
 }
-
-// console.log(transFlotValue);
-// if (transFlotValue == NaN) {
-//     console.log('you put zero')
-// } else {
-//     console.log('other')
-// }
-
-
-
-// for (const input of inputs) {
-// const transFlotValue = parseFloat(input);
-// console.log(transFlotValue);
-// if (transFlotValue == NaN) {
-//     console.log('jfnv')
-//     console.log(transFlotValue);
-// }
-// else {
-
-//     return input;
-// }
-
-// if (typeof input === 'string') {
-//     console.log(input)
-// }
-// }
