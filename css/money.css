@@ -1,4 +1,15 @@
-h1 {
-    color: red;
+/* font family link */
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+Display:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+.text {
+    color: deeppink;
     text-align: center;
+    font-family: 'Lobster', cursive;
 }
