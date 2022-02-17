@@ -90,13 +90,13 @@
                                 <div class="mb-3 row gx-5">
                                     <label class="col-lg-3 col-form-label fs-4">Save:</label>
                                     <div class="col-lg-9 ">
-                                        <input type="text" class="form-control w-100  m-2" id="food-input">
+                                        <input type="text" class="form-control w-100  m-2" id="saving-input">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-1 fs-2 persent"> % </div>
                             <div class="col-lg-4">
-                                <button id="calculate-btn" class="button rounded-pill w-100 ps-4 my-1 save">Save</button>
+                                <button onclick="saveBtn()" class="button rounded-pill w-100 ps-4 my-1 save">Save</button>
                             </div>
 
                         </div>
@@ -104,8 +104,8 @@
 
                         <div class="calcu">
 
-                            <h3 id="saving-amount" class="mb-4 mt-4 right-header   fs-2">Saving Amount: 2000 </h3>
-                            <h3 id="remaining-balance" class="mb-4 mt-1 right-header  fs-2">Remaining Balance: 2500</h3>
+                            <h3 class="mb-4 mt-4 right-header   fs-2">Saving Amount: <span id="saving-amount">2000</span> </h3>
+                            <h3 class="mb-4 mt-1 right-header  fs-2">Remaining Balance: <span id="remaining-balance">2500</span> </h3>
                         </div>
                     </div>
 
