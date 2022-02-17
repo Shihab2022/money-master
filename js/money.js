@@ -4,21 +4,24 @@ function calculateBtn() {
 
     const incomeInput = getInput('income-input');
 
-
     const foodInput = getInput('food-input');
     const rentInput = getInput('rent-input');
     const clothesInput = getInput('clothes-input');
 
-
     const totalCost = foodInput + rentInput + clothesInput;
+    if (totalCost > incomeInput) {
+        alert('Your income is ' + incomeInput + ' and your cost ' + totalCost + ' . So you cannot cost extra money.')
+    } else {
 
-    const displayTotalCost = displayOutput('total-expenses');
-    displayTotalCost.innerText = totalCost;
+        const displayTotalCost = displayOutput('total-expenses');
+        displayTotalCost.innerText = totalCost;
 
-    const displayRest = incomeInput - totalCost;
+        const displayRest = incomeInput - totalCost;
 
-    const balense = displayOutput('balance');
-    balense.innerText = displayRest;
+        const balense = displayOutput('balance');
+        balense.innerText = displayRest;
+    }
+
 
 }
 
@@ -37,16 +40,19 @@ function saveBtn() {
     const balense = document.getElementById('balance').innerText;
     const balenseValue = parseFloat(balense);
 
+    // condition
 
-    const reminingBalance = balenseValue - savingAmount;
+    if (balense < savingAmount) {
+        alert('Your balanse is ' + balense + ' and your saving amaount ' + savingAmount + ' . So you cannot save  this amount .')
+        return;
+    } else {
+        const reminingBalance = balenseValue - savingAmount;
 
-    const displayOutput2 = displayOutput('remaining-balance');
-    displayOutput2.innerText = reminingBalance;
-
+        const displayOutput2 = displayOutput('remaining-balance');
+        displayOutput2.innerText = reminingBalance;
+    }
 
 }
-
-
 
 
 // common function

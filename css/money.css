@@ -44,9 +44,6 @@
 
 /* responsive part */
 
-
-/* Extra small devices (phones) */
-
 @media only screen and (max-width: 768px) {
     label {
         text-align: center;
